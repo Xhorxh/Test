@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!isValidSurname || !isValidPhone) return; // Stop if validation fails
 
         // Send data to server
-        fetch('https://script.google.com/macros/s/AKfycbyyvFtmcATh-LwJgBVJKC6_a7zbgBdPFErgoaBsFbp14T83tkUzVQaNdh27OO8DlGe0YQ/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbw8S1QQRdQXdsc-f36HGMEmyWLeXyr7wTVOr7sJrqFzjoh85J93HRl_rEpGmnV3lKfO/exec', {
             method: 'POST',
             body: new URLSearchParams(dataObject),
         })
