@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Enhanced SEO Meta Tags -->
+    <title>Premium Sports Streaming | Watch Live Sports</title>
+    <meta name="description" content="Watch NBA, Serie A, Premier League, Europa League, Champions League & Conference League live in Ultra HD quality.">
+    <meta name="keywords" content="sports streaming, NBA, Serie A, Premier League, Champions League, Europa League">  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets\css\style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="navbar-brand left">
+                    <img src="sky-sports.png" alt="Platform Logo" class="navbar-logo">
+                </div>
+                <div class="navbar-brand right">
+                    <img src="sky-for-business.png" alt="Platform Logo" class="navbar-logo">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="leagues-section">
+            <div class="container">
+                <div class="sports-cards-container">
+                    <div class="sports-cards">
+                        <div class="sports-card serie-a">
+                            <div class="logo-container">
+                                <img src="img\serie-a.png" alt="Serie A" class="league-logo">
+                                <p class="serie-a-text">10 partite su 10 a turno</p>
+                            </div>
+                        </div>
+                        <div class="sports-card champions-league">
+                            <div class="logo-container">
+                                <img src="img\champions-league.png" alt="Champions League" class="league-logo">
+                            </div>
+                        </div>
+                        <div class="sports-card premier-league">
+                            <div class="logo-container">
+                                <img src="img\premier-league.png" alt="Premier League" class="league-logo">
+                            </div>
+                        </div>
+                        <div class="sports-card conference-league">
+                            <div class="logo-container">
+                                <img src="img\uecl-logo.png" alt="Conference League" class="league-logo">
+                            </div>
+                        </div>
+                        <div class="sports-card europa-league">
+                            <div class="logo-container">
+                                <img src="img\europa-league.png" alt="Europa League" class="league-logo">
+                            </div>
+                        </div>
+                        <div class="sports-card nba">
+                            <div class="logo-container">
+                                <img src="img\nba-logo.png" alt="NBA" class="league-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero-section text-white">
+            <div class="container">
+                <div class="top-banner">
+                    Abbonamento Sky business per bar e ristoranti
+                </div>       
+                <h1 class="main-title">
+                    Riempi il tuo bar 7 giorni su 7 anche durante le festività
+                </h1>        
+                <p class="description">
+                    Tutta la serie A ENILIVE, la UEFA Champions League, la UEFA Europa League, la UEFA Conference League, il basket, il tennis, i motori e gli approfondimenti di Sky Sport 24.
+                </p>        
+                <div class="price-section">
+                    <span class="old-price">519,00€</span>
+                    <span class="new-price">299,00€</span>
+                    <span class="price-note">al mese per 12 mesi</span>
+                </div>                
+                <div class="button-container">
+                    <button type="button" class="button-primary" onclick="scrollToOffers()">Ti richiamamo entro 1h</button>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Form Section -->
+        <section class="forms-section" id="offers">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="form-card">
+                            <div class="form-header text-center">
+                                <h3>Compila il modulo per ricevere MAGGIORI INFORMAZIONI:</h3>
+                            </div>
+                            <form id="myForm" class="signup-form">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Inserisci qui il tuo Nome">
+                                    <label for="name">Nome</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="surname" name="surname" placeholder="Inserisci qui il tuo Cognome" required>
+                                    <label for="surname">Cognome</label>
+                                    <div id="surnameError" class="error-message">Il cognome è obbligatorio.</div>
+                                </div>
+
+                                <div class="form-floating mb-4">
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Inserisci qui il tuo Numero di Telefono" required>
+                                    <label for="phone">Numero di Telefono</label>
+                                    <div id="phoneError" class="error-message">Inserire un numero di telefono italiano valido.</div>
+                                </div>
+        
+                                <div class="privacy-check mb-3">
+                                    <input type="checkbox" id="privacy" required>
+                                    <label for="privacy">Ho letto l'Informativa Privacy</label>
+                                </div>
+        
+                                <button type="submit" class="submit-button">
+                                    <span class="button-text">Chiamami</span>
+                                </button>
+        
+                                <div class="privacy-text mt-4">
+                                    Inserendo i miei dati personali, autorizzo a contattarmi per ricevere assistenza e informazioni 
+                                    sulle offerte SKY Business. Dichiaro di aver preso visione dell'informativa privacy, di essere maggiorenne, 
+                                    di essere l'intestatario del numero fornito e di essere a conoscenza delle sanzioni previste dalla 
+                                    vigente normativa in caso di rilascio di dichiarazioni mendaci.
+                                </div>
+        
+                                <div class="privacy-link text-center mt-3">
+                                    <a href="https://assets.contentstack.io/v3/assets/blta6c52b9cd5519be3/blt86dad0cda3c4229b/informativa-privacy-prospect-business.pdf" target="_blank">Leggi l'Informativa sulla privacy di Sky Business</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        <!-- Feedback Card -->
+        <div id="feedbackCard" class="feedback-card">
+            <div class="feedback-content">
+                <i class="bi bi-check-circle-fill"></i>
+                <h4>Grazzie!</h4>
+                <p>Un nostro operatore la richiamerà in tempi brevi.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="assets\js\script.js"></script>
+</body>
+</html>

@@ -1,0 +1,451 @@
+:root {
+    --primary-blue: #001d54;
+    --secondary-blue: #0066cc;
+    --accent-blue: #00a3e0;
+    --nba-red: #c9082a;
+    --premier-blue: #00ffffa3;
+    --europa-orange: #ff4b00;
+    --champions-blue: #041fcf;
+    --conference-green: #00ff88a2;
+    --primary-green: #19975d;
+    --text-dark: #333;
+    --text-gray: #666;
+}
+
+/* General Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.5;
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    min-height: 80vh;
+    padding: 6rem 0 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('') repeat;
+    opacity: 0.1;
+}
+
+.hero-content {
+    position: relative;
+}
+
+/* Sports Cards Section */
+.sports-card {
+    flex: 0 0 160px;
+    height: 220px;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+.sports-card:hover {
+    transform: translateY(-10px);
+}
+
+.nba {
+    background: linear-gradient(135deg, var(--nba-red), #000000);
+}
+
+.serie-a {
+    background: linear-gradient(135deg, #001489, #000033);
+}
+
+.premier-league {
+    background: linear-gradient(135deg, var(--premier-blue), #00bfff);
+}
+
+.europa-league {
+    background: linear-gradient(135deg, var(--europa-orange), #000000);
+}
+
+.champions-league {
+    background: linear-gradient(135deg, var(--champions-blue), #0a1647);
+}
+
+.conference-league {
+    background: linear-gradient(135deg, var(--conference-green), #004d40);
+}
+
+.serie-a-text {
+    color: white;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Layout Components */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/* Form Section */
+.forms-section {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.form-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    color: var(--text-dark);
+}
+
+.form-header {
+    margin-bottom: 20px;
+}
+
+.form-header h3 {
+    color: #1a73e8;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.form-floating > label {
+    color: var(--text-gray);
+}
+
+.form-control {
+    height: 38px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: #1a73e8;
+    box-shadow: none;
+}
+
+.privacy-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.privacy-check label {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-bottom: 0;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px 15px;
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+    height: calc(2.5rem + 2px);
+}
+
+.submit-button:hover {
+    background-color: #147a4b;
+}
+
+.privacy-text {
+    font-size: 12px;
+    color: var(--text-gray);
+    text-align: center;
+    line-height: 1.4;
+}
+
+.privacy-link a {
+    color: #1f43f9;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.privacy-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+/* Feedback Card */
+.feedback-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+    text-align: center;
+}
+
+.feedback-content i {
+    font-size: 3rem;
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+.sports-cards-container {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.sports-cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.league-logo {
+    width: 75%;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
+}
+
+/* Update media queries */
+@media (max-width: 1024px) {
+    .sports-card {
+        flex: 0 0 140px;
+        height: 200px;
+    }
+    
+    .league-logo {
+        width: 70%;
+        max-height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sports-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .sports-card {
+        flex: 0 0 130px;
+        height: 180px;
+    }
+    
+    .league-logo {
+        width: 65%;
+        max-height: 90px;
+    }
+    
+    .serie-a-text {
+        font-size: 0.7rem;
+    }
+    .hero-section {
+        padding: 4rem 0 2rem;
+    }
+    
+    .price-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-card {
+        padding: 1rem;
+    }
+
+    .privacy-check {
+        margin-bottom: 1rem;
+    }
+    
+    .submit-button {
+        margin-top: 0;
+    }
+}
+.info-card {
+    padding: 10px 20px;
+    margin: 0 15px;
+    gap: 10px;
+}
+
+.platform-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+}
+
+.logo-image {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 480px) {
+    .info-card {
+        flex-direction: column;
+        padding: 15px;
+        gap: 8px;
+    }
+
+}
+
+main {
+    padding-top: 80px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, var(--secondary-blue), var(--primary-blue));
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    height: 80px; }
+
+.navbar-logo {
+    height: 35px;
+    width: auto;
+    border-radius: 8px;
+    padding: 0.1rem;
+}
+
+.navbar-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.top-banner {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    display: inline-block;
+    align-items: center;
+}
+
+.main-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.description {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+/* Price Section */
+.price-section {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.old-price {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.new-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Buttons */
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.button-primary {
+    background-color: white;
+    color: blue;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.button-secondary {
+    background-color: transparent;
+    color: white;
+    padding: 12px 24px;
+    border: 2px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Adding hover effect */
+.button-primary:hover {
+    background-color: #147a4b;
+    transform: translateY(-2px);
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(25, 151, 93, 0.2);
+}
+
+
+.leagues-section {
+    background: radial-gradient( #2c4df1, #001d54);
+}
